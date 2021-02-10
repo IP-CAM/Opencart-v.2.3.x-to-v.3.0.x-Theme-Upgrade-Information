@@ -2,6 +2,19 @@
 
 Below I have created some regular expression code to help with your PHP IDE to mass search and replace basic PHP syntax with Twig syntax.
 
-<code>
+```php
 <?php echo $var; ?>
-</code>  
+```
+```php
+<\?php echo [$](\w*\b)[;] \?\>
+```
+```php
+{{ $1 }}
+```
+
+
+
+
+
+
+
