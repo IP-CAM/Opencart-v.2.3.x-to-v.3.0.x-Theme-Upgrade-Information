@@ -3,9 +3,5 @@
 Below I have created some regular expression code to help with your PHP IDE to mass search and replace basic PHP syntax with Twig syntax.
 
 <code>
-<?php echo $var; ?> 
-
-<\?php echo [$](\w*\b)[;] \?\>  
-
-{{ $1 }}  
+<?php echo $var; ?>
 </code>  
