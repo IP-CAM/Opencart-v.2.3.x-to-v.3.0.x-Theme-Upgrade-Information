@@ -222,14 +222,52 @@ Below I have created some regular expression code to help with your PHP IDE to m
 
 <hr>
 
+<\?php \} else \{ \?>
+{% else %}
 
+<hr>
 
+<\?php echo \(\$language_id == \$language\[\'language_id\'\]\) \? \' class\=\"active\"\' : \'\' \?>
+{% if language_id == language.language_id %} class="active"{% endif %}
 
+<hr>
 
+<\?php echo \(\$language_id == \$language\[\'language_id\'\]\) \? \' active\' \: \'\' \?>
+{% if language_id == language.language_id %} active{% endif %}
 
+<hr>
 
+<\?php if \(empty\(\$(.+?)\[\'(.+?)\']\)\) { \?>
+{% if $1.$2 %}
 
+<hr>
 
+<\?php echo \$language_flag\[\$language\[\'language_id\'\]\] \?>
+{{ language_flag[language.language_id] }}
+
+<hr>
+
+<\?php echo \$language\[\'language_id\'\] \?>
+{{ language.language_id }}
+
+<hr>
+
+<\?php isset\(\$membership_notification\[\'customer_creation_template'][$language['language_id']]) && print($membership_notification['customer_creation_template'][$language['language_id']]); ?>
+
+<hr>
+
+<\?php echo [$](\w*\b)[;] \?\>
+{{ $1 }}
+
+<hr>
+
+<\?php foreach \([$](\w+)\s+as\s+[$](\w+)\s+=\>\s+[$](\w+)\)\s+\{ \?\>
+{% for $2, $3 in $1 %}
+
+<hr>
+
+<\?php echo strtolower\(\$(.*?)\); \?>
+{{ $1 }}
 
 <hr>
 
