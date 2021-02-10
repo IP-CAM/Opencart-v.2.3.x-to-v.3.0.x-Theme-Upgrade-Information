@@ -252,116 +252,153 @@ Below I have created some regular expression code to help with your PHP IDE to m
 
 ```php
 <?php foreach ($var1 as $var2) ?>
+```
 ```php
 <\?php foreach \([$](.*\b) as [$](.*\b)\) \{ \?\>
+```
 ```php
 {% for $2 in $1 %}
+```
 
 <hr>
 
 ```php
 <?php foreach ($custom_field['custom_field_value'] as $custom_field_value) { ?>
+```
 ```php
 <\?php foreach \([$](.*\b)\[\'(.*\b)\'\] as [$](\w+)\) \{ \?\>
+```
 ```php
 {% for $3 in $1.$2 %}
+```
 
 <hr>
 
 ```php
 <?php foreach ($setting['returns']['paidby'] as $v) { ?>
+```
 ```php
 <\?php foreach \([$](.*\b)\[\'(.*\b)\'\]\[\'(.*\b)\'\] as [$](\w+)\) \{ \?\>
+```
 ```php
 {% for $4 in $1.$2.$3 %}
+```
 
 <hr>
 
 ```php
 <?php foreach ($marketplaces as $id => $name) { ?>
+```
 ```php
 <\?php foreach \([$](\w+)\s+as\s+[$](\w+)\s+=\>\s+[$](\w+)\)\s+\{ \?\>
+```
 ```php
 {% for $2, $3 in $1 %}
+```
 
 <hr>
 
 ```php
 <?php foreach ($capture['shipping_info'] as $key => $shipping_info) { ?>
+```
 ```php
 <\?php foreach \([$](.*)\[\'(.*)\'\]\s+as\s+[$](.*)\s+=\>\s+[$](\w+)\)\s+\{ \?\>
+```
 ```php
 {% for $3, $4 in $1.$2 %}
+```
 
 <hr>
 
 ```php
 <\?php \} else \{ \?>
+```
 ```php
 {% else %}
+```
 
 <hr>
 
 ```php
 <\?php echo \(\$language_id == \$language\[\'language_id\'\]\) \? \' class\=\"active\"\' : \'\' \?>
+```
 ```php
 {% if language_id == language.language_id %} class="active"{% endif %}
+```
 
 <hr>
 
 ```php
 <\?php echo \(\$language_id == \$language\[\'language_id\'\]\) \? \' active\' \: \'\' \?>
+```
 ```php
 {% if language_id == language.language_id %} active{% endif %}
+```
 
 <hr>
 
 ```php
 <\?php if \(empty\(\$(.+?)\[\'(.+?)\']\)\) { \?>
+```
 ```php
 {% if $1.$2 %}
+```
 
 <hr>
 
 ```php
 <\?php echo \$language_flag\[\$language\[\'language_id\'\]\] \?>
+```
 ```php
 {{ language_flag[language.language_id] }}
+```
 
 <hr>
 
 ```php
 <\?php echo \$language\[\'language_id\'\] \?>
+```
 ```php
 {{ language.language_id }}
+```
 
 <hr>
 
 ```php
 <\?php echo [$](\w*\b)[;] \?\>
+```
 ```php
 {{ $1 }}
+```
 
 <hr>
 
 ```php
 <\?php foreach \([$](\w+)\s+as\s+[$](\w+)\s+=\>\s+[$](\w+)\)\s+\{ \?\>
+```
 ```php
 {% for $2, $3 in $1 %}
+```
 
 <hr>
 
 ```php
 <\?php echo strtolower\(\$(.*?)\); \?>
+```
 ```php
 {{ $1 }}
+```
 
 <hr>
 
 You will still need to close off the ifs and for statements with the below syntax.
 
+```php
 {% endif %}
+```
 
+```php
 {% endfor %}
+```
 
 
