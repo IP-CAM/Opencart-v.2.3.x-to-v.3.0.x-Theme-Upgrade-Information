@@ -4,8 +4,10 @@ Below I have created some regular expression code to help with your PHP IDE to m
 
 <code>
 <?php echo $var; ?>
-  
+</code>
+<code>
 <\?php echo [$](\w*\b)[;] \?\>
-
+</code>
+<code>
 {{ $1 }}
 </code>
